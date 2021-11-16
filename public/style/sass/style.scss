@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// import other SASS files
+@import "./base/base-style";
+@import "./base/typography";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/navigations";
+
+
+//end import other SASS files
