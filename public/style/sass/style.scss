@@ -5,6 +5,7 @@
 }
 
 // import other SASS files
+@import "./sass-utils/variables";
 @import "./base/base-style";
 @import "./base/typography";
 @import "./components/header";

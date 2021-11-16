@@ -1,17 +1,19 @@
 import React from 'react';
-import Menu from '../Menu/Menu.js';
+import Nav from '../Menu/Nav.js';
 import IconsMenu from '../Menu/IconsMenu.js';
 
 function Header() {
+
+    const slides = {
+        slide1: {
+            heading: ""
+        }
+    }
     return (
         <header className="header">
             <div className="header__wrapper">
-                <div className="header__icons">
-                    <IconsMenu />
-                </div>
-                <nav className="header__nav">
-                    <Menu />  
-                </nav>
+                <IconsMenu />
+                <Nav />  
                 <div className="header__slider">
                     <div className="header__content">
                         <h1 className="header__heading">EXPERIENCE THE NATURES'S BEAUTY</h1>
