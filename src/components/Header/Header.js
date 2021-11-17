@@ -1,34 +1,25 @@
 import React from 'react';
-import Nav from '../Menu/Nav.js';
-import IconsMenu from '../Menu/IconsMenu.js';
+import Nav from './Menu/Nav.js';
+import IconsMenu from './Menu/IconsMenu.js';
+import MainSlider from './Sliders/MainSlider/MainSlider.js';
+import StaticSlider from './Sliders/StaticSlider/StaticSlider.js';
+import SearchHotels from './SearchHotels/SearchHotels';
+import { Route, Routes} from 'react-router-dom';
 
 function Header() {
 
-    const slides = {
-        slide1: {
-            heading: ""
-        }
-    }
     return (
         <header className="header">
             <div className="header__wrapper">
                 <IconsMenu />
                 <Nav />  
                 <div className="header__slider">
-                    <div className="header__content">
-                        <h1 className="header__heading">EXPERIENCE THE NATURES'S BEAUTY</h1>
-                        <p className="header__subtile">Opis co będzie sie tutaj działo, jakiś podtytuł dla tego sloganu</p>
-                        <button className="header__btn btn-main">Continue Reading</button>
-                    </div>
-                    <div className="header__arrows">
-                        <div className="header__arrows--next">
-                            next
-                        </div>
-                        <div className="header__arrows--prev">
-                            prev
-                        </div>
-                    </div>
+                    <Routes>
+                        <Route path="/" exact element={<MainSlider />} />
+                        <Route path="*" element={<StaticSlider />} />
+                    </Routes>
                 </div>
+                <SearchHotels />
             </div>    
         </header>
         )

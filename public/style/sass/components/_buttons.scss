@@ -1,0 +1,16 @@
+.btn-primary {
+    padding: 1.2rem 2.5rem;
+    border: none;
+    color: #fff;
+    background-color: $second-color;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    //tutaj zrobię znimacje buttona
+    //jakąś mega ciekawą z kursu udemy
+    background-color: $main-color;
+    transition: .3s;
+}

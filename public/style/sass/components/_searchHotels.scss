@@ -1,0 +1,44 @@
+.searchHotels {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    width: 1040px;
+    background-color: #fff;
+    height: 70px;
+    box-shadow: 1px 10px 20px 1px rgb(192, 192, 192);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    // background-color: rgb(0, 53, 122);
+    background: #973078;
+    background: linear-gradient(to right, #fc4566, #ca1451);
+
+    & input {
+        margin: 15px 0;
+        border: none;
+        background-color: rgb(245, 245, 245);
+        padding: 0 10px;
+        height: 40px;
+
+        &::placeholder {
+            color: rgb(34, 34, 34);
+        }
+    }
+
+    & input:nth-child(1) {
+        margin-left: 35px;
+    }
+
+    & .searchIcon {
+        height: 40px;
+        width: 42px;
+        background-color: $main-color;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        line-height: 47px;
+        font-size: 2.2rem;
+    }
+}

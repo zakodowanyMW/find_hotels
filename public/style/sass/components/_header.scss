@@ -1,6 +1,5 @@
 .header {
-    min-height: 500px;
-    height: 80vh;
+    height: 90vh;
     background-image: url('../../../images/girl2.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -13,5 +12,123 @@
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: 100%;
+        position: relative;
+    }
+
+    &__subtitle {
+        color: white;
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 1.6px;
+        padding-bottom: 5rem;
+        font-family: 'Raleway', sans-serif;
+        text-shadow: 1px 5px 20px rgb(32, 32, 32);
+    }
+
+    &__heading {
+        @include main_heading_h1;
+    }
+
+    &__contact-informations {
+        justify-self: start;
+
+        & a {
+            padding: 0 7px;
+
+            &:hover {
+                color: blue;
+            }
+        }
+
+        & span {
+            padding: 0 5px;
+        }
+    }
+
+    &__arrows {
+        color: white;
+        font-weight: bold;
+        font-size: 4rem;
+
+        &--down {
+            margin-top: 10px;
+        }
+    }
+}
+
+
+.header__icons {
+    display: grid;
+    justify-items: end;
+    max-width: 1240px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 40px;
+    grid-template-rows: 40px;
+    grid-template-columns: 500px 1fr;
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.header__social-media-icons {
+
+    //jakies ustawienia
+    & .nav-icon {
+        font-size: 1.8rem;
+        color: white;
+        padding: 0 7px;
+        line-height: 5rem;
+
+        &:hover {
+            color: yellow;
+        }
+    }
+}
+
+.header__navigation {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    justify-items: end;
+    grid-template-columns: 200px 1fr;
+    justify-content: space-evenly;
+    padding: 10px 0;
+
+    &__logo {
+        padding: 10px;
+        background-color: crimson;
+        justify-self: start;
+        margin-left: 30px;
+    }
+
+    &__nav .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        max-width: 800px;
+
+        & .item {
+            padding: 15px 20px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            border-radius: 12px;
+
+            &.active {
+                border-bottom: 3px solid $main-color;
+            }
+
+            & a {
+                color: white;
+                text-shadow: 1px 5px 20px rgb(0, 53, 114);
+                letter-spacing: 1.2px;
+
+                &.active {
+                    color: rgb(255, 252, 79);
+                }
+
+                &:hover {
+                    color: rgb(255, 252, 79);
+                }
+            }
+        }
     }
 }
