@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,900;1,500;1,600&display=swap');
 
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color: $main-text-color;
+}
+
 //heading main page style
 @mixin main_heading_h1 {
     font-family: 'Raleway', sans-serif;
@@ -9,5 +17,5 @@
     max-width: 850px;
     margin: 0 auto;
     line-height: 9rem;
-    padding: 50px 20px 35px 20px;
+    padding: 20px 20px 35px 20px;
 }

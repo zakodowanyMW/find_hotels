@@ -1,0 +1,23 @@
+.home {
+    max-width: 1240px;
+    padding-top: 4rem;
+    color: black;
+    margin: 0 auto;
+
+    & h1 {
+        margin: 5rem 0 2rem 0;
+    }
+
+    &__promo {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 20px;
+        height: 200px;
+
+        &_item {
+            padding: 2rem;
+            background-color: #fff;
+            height: 100%;
+        }
+    }
+}
