@@ -6,7 +6,7 @@ export default function Hotel(props) {
             { 
                 props.hotels.map(item => {
                     return (
-                        <div className="home__promo_item">
+                        <div className="home__promo_item" key={item.name}>
                             <div className="image">
                                 <img src={item.imageUrl} alt="" />
                                 <h3 className="hotel-title">{item.name}</h3>
@@ -16,6 +16,7 @@ export default function Hotel(props) {
                                 <p>299zł /os</p>
                             </div>
                             <p className="description">{item.description}</p>
+                            <button className="btn-primary promo_btn">VIEW DETAILS</button>
                         </div>
                     )
                 })

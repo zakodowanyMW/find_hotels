@@ -1,3 +1,12 @@
+.promo_btn {
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.3rem;
+    padding: 13px;
+}
+
+
 .home {
     max-width: 1240px;
     padding-top: 4rem;
@@ -5,7 +14,7 @@
     margin: 0 auto;
 
     & h1 {
-        margin: 5rem 0 2rem 0;
+        margin: 6rem 0 4rem 0;
     }
 
     &__promo {
@@ -54,9 +63,25 @@
                 // color: $main-text-color;
                 color: rgb(255, 255, 255);
                 font-size: 1.5rem;
-                padding: 5px 0;
+                padding: 10px 15px;
                 background-color: rgb(113, 76, 117);
             }
+        }
+    }
+}
+
+
+.best-trip {
+    width: 1240px;
+    display: grid;
+    grid-template-columns: 1fr minmax(400px, 500px);
+    gap: 3rem;
+    padding: 8rem 0;
+
+    &__image {
+
+        & img {
+            width: 100%;
         }
     }
 }
